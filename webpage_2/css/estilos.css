@@ -1,0 +1,84 @@
+#contacto h1{
+    color:red;
+    text-align: center;
+}
+
+input[type=text],input[type=email],select{
+    width: 215px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.boton  {
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: red;
+    border: 5px solid lightcoral; /*dashied para linea punteada */
+}
+.boton:hover{  /*hove es para cuando te posas encima */
+    background-color: white;
+    color: red;
+}
+form span   {
+    color: red;
+}
+
+input:focus {
+    background-color: yellow;
+}
+
+p{
+    font-style: italic;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #c3a2c3;
+}
+h1{
+    text-align: center;
+    font-size: 36px;
+}
+
+
+/* Menu*/
+ul.menu{
+    overflow: hidden;
+    background-color: coral;
+}
+ul.menu li{
+    width: 150px;
+    float:left;
+    list-style-type: none;
+    text-align: center;
+    
+}
+
+ul.menu li a{  /*se uede usar > para elegr solo los li q estan luego de menu sin los submenu*/
+    display: block;
+    /* vertial-align: middle; sirve para cuando se mepoe el titulo en dos lineas, para que quede en una sola*/
+    text-decoration: none;
+    color: thistle;
+    padding: 20px 0px;
+    text-transform: uppercase;
+
+}
+
+
+ul.menu li a:hover{
+    background-color: white;
+    color: red;
+}
+
+/*contacto*/
+section.contacto{
+    clear: both;
+}
+
+@media (max-width:768px){
+    ul.menu li{
+        float: none;
+        width: 100%;
+    }
+}

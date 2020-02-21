@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Menu</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Ir a nicio">Inicio</a></li><!--title sirve para no videntes los enlaces debe tener title para ser validados correctamente-->
+                <li><a href="menu.html" title="Quienes somos">Quienes Somos</a></li>
+                <li><a href="contacto.html" title="Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contacto"><!--la seccion me sirve para usar un mismo css y poder referenciar a cual archivo me refiero-->
+        <h1>¡Escribinos, te respondemos a la brevedad!</h1>
+        <form action="" method="POST">
+    
+            <div>
+                <label for="txtNombre">Nombre: <span>*</span></label><!--span es para vista, no es relevante-->
+                <input type="text" name="txtNombre" id="txtNombre" required="txtNombre" ><!--name para backend, id frontend-->
+            </div>
+            
+            <div>
+                <label for="txtCorreo">Email: <span>*</span></label>
+                <input type="email" name="txtCorreo" id="txtCorreo" required="txtCorreo"><!--puede o no ir required con ""-->
+            </div><!--div crea bloques, los pone uno debajo del otro-->
+    
+            <div>
+                <label for="txtTelefono">Teléfono: <span>*</span></label>
+                <input type="text" name="txtTelefomo" id="txtTelefono" required="txtTelefono">
+            </div>
+    
+            <div>
+                <label for="IstPais">País de origen</label>
+                <select name="IstPais" id="IstPais">
+                    <optgroup label="Sudamerica">
+                        <option value="Ar">Argentina</option>
+                        <option value="Br">Brasil</option>
+                        <option value="Co">Colombia</option>
+                    </optgroup>
+                    <optgroup label="Europa">
+                        <option value="Es">España</option>
+                        <option value="Fr">Francia</option>
+                        <option value="Al">Alemania</option>
+                    </optgroup>
+                </select>
+            </div>
+    
+    
+            <div>
+                <label for="">Asunto <span>*</span></label>
+                <select name="lstAsunto" id="lstAsunto" required>
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="ventas">Ventas</option>
+                    <option value="soporte">Soporte</option>
+                    <option value="webmaster">Webmaster</option>
+                </select>    
+            </div>
+    
+            <div>
+                <label for="">Mensaje <span>*</span></label>
+                <textarea name="txtMensaje" id"txtMensaje" cols="99" rows="20"> </textarea>
+            </div>
+    
+            <div>
+                <input type="checkbox" name="chkNewsletter" id= "chkNewsletter">
+                <label for="chkNewsletter">Deseo recibir novedades al correo</label>    
+            </div>
+    
+            <div>
+                <input type="checkbox" name="chkPoliticas" id= "chkPoliticas">
+                <label for="chkPoliticas">Acepto las políticas de privacidad</label>    
+            </div>
+    
+            <div>
+                <label >¿Es mayor de edad?</label>
+                <input type="radio" name="optMayor" id="optMayorSi" value="si"><label for="optMayorSi">Si</label>
+                <!--al llamarse los dos de la misma forma no pueden tildarse juntos, el id si debe ser unico-->
+                <input type="radio" name="optMayor" id="optMayorNo" value="no"><label for="optMayorNo">No</label>
+            </div>
+    
+            <div>
+                <input type="submit" value="Enviar" id="btnEnviar" name="btnEnviar" class="boton"></input>
+            </div>
+    
+    
+        </form>
+        </section>
+        
+        <footer>
+
+        </footer>
+</body>
+</html>

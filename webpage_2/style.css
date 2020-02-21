@@ -1,0 +1,60 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #c3a2c3;
+}
+h1{
+    text-align: center;
+    font-size: 36px;
+}
+#productos h2{
+    color: red;
+    font-size: 24px;
+    font-weight: 200;
+    text-decoration: red;
+}
+.mi_lista{
+
+    font-size: 12px;
+}
+/*.item{
+    font-weight: bolder ;
+}*/
+.precio{
+    background-color: yellowgreen;
+}
+
+p{
+    font-style: italic;
+}
+#productos img {
+    width: 200px;
+}
+#contacto h1{
+    color:red;
+    text-align: center;
+}
+
+input[type=text],input[type=email],select{
+    width: 215px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.boton  {
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: red;
+    border: 5px solid lightcoral; /*dashied para linea punteada */
+}
+.boton:hover{  /*hove es para cuando te posas encima */
+    background-color: white;
+    color: red;
+}
+form span   {
+    color: red;
+}
+
+input:focus {
+    background-color: yellow;
+}
